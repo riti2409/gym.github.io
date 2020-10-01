@@ -1,44 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Riti Fitness</title>
-</head>
-<style>
-    body{
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>FITNESS ADDA</title>
+
+    <link rel="stylesheet" href="/style.css" />
+
+    <script src="/script.js" defer></script>
+    <style>
+      body {
+        font-family: "Baloo Bhai";
+        color: black;
         margin: 0px;
-        padding:0px;
-        background: url('gym.jpg');
-    }
-    .left{
-border: 2px solid red;
-display: inline-block;
-    }
-    .mid{
-        border: 2px solid red;
-        
-        margin:12px auto;
-    }
-    .right{
-        border: 2px solid red;
+        padding: 0px;
+
+        background: url("https://cdn.glitch.com/a5d9a973-0c65-4531-8ca4-a3619203569d%2Fgym-wallpaper-hd-elegant-gym-wallpapers-hd-wallpaper-cave-this-week-of-gym-wallpaper-hd.jpg?v=1594004436203")
+          no-repeat center center fixed;
+        background-size: cover;
+        height: 100%;
+      }
+      img {
+        border-radius: 50%;
+      }
+      img:hover {
+        background-color: black;
+      }
+
+      .left {
         display: inline-block;
+
         position: absolute;
-        right:32px;
-        left:
-    }
-</style>
-<body>
+        left: 60px;
+        top: 20px;
+        text-decoration: none;
+      }
+
+      .left img {
+        width: 136px;
+        filter: invert(100%);
+      }
+
+      .left div {
+        line-height: 19px;
+        font-size: 26px;
+        text-align: center;
+      }
+
+      .mid {
+        display: block;
+        width: 70%;
+        margin: 39px auto;
+        color: black;
+        font-weight: bold;
+        /* border: 2px solid green; */
+      }
+
+      .right {
+        position: absolute;
+        right: 10px;
+        cursor: pointer;
+
+        top: 43px;
+        display: inline-block;
+        font-size: 10px;
+        /* border: 2px solid yellow; */
+      }
+
+      .navbar {
+        display: inline-block;
+        cursor: pointer;
+      }
+
+      .navbar li {
+        display: inline-block;
+        font-size: 20px;
+        padding: 2px;
+      }
+
+      .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+      }
+
+      .navbar li a:hover,
+      .navbar li a.active {
+        text-decoration: underline;
+        color: blue;
+      }
+
+      .btn {
+        font-family: "Baloo Bhai", cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .btn:hover {
+        background-color: rgb(45, 80, 30);
+      }
+
+      .container {
+        border: 2px solid white;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 40%;
+        border-radius: 30px;
+      }
+
+      .form-group input {
+        font-family: "Baloo Bhai", cursive;
+        text-align: center;
+        display: block;
+        width: 440px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+        font-weight: bold;
+        color: blue;
+      }
+
+      .container h1 {
+        text-align: center;
+      }
+
+      .container button {
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+      }
+      .m {
+        color: yellow;
+        font-size: 30px;
+      }
+      .header {
+        background-color: black;
+        text-color: white;
+      }
+      .b {
+        text-color: green;
+        font-size: 20px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
     <header class="header">
-        <div class="left">
-i am left
+      <div class="left">
+        <img
+          src="https://cdn.glitch.com/a5d9a973-0c65-4531-8ca4-a3619203569d%2Fgymm.jpg?v=1594002849329"
+          alt="PICTURE NOT AVAILABLE"
+        />
+        <div>
+          <strong style="color:white">RITI FITNESS AREA &#9757;</strong>
         </div>
-        <div class="mid">
-i am mid
-        </div>
-        <div class="right">
-i am right
-        </div>
+      </div>
+
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="https://ritiupadhyay.glitch.me/">Home</a></li>
+          <li><a href="https://ritiupadhyay.glitch.me/">About Us</a></li>
+          <li><a href="https://ritiupadhyay.glitch.me/">Images</a></li>
+          <li><a href="https://ritiupadhyay.glitch.me/">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="right">
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email Us</button>
+      </div>
     </header>
-</body>
+    <div class="container">
+      <h1>
+        <strong style="color:white"
+          ><marquee>
+            &#128513;JOIN THE BEST GYM OF BOKARO &#128513;</marquee
+          ></strong
+        >
+      </h1>
+
+      <form>
+        <div class="form-group">
+          <strong class="m">NAME:</strong>
+
+          <input type="text" name="" placeholder="Enter your Name" />
+        </div>
+        <div class="form-group">
+          <div class="form-group">
+            <strong class="m">PASSWORD:</strong
+            ><input type="password" name="" placeholder="Enter your Password" />
+          </div>
+          <strong class="m">AGE:</strong
+          ><input type="text" name="" placeholder="Enter your Age" />
+        </div>
+        <div class="form-group">
+          <strong class="m">GENDER:</strong>
+
+          <input type="radio" name="age" /><strong class="b">MALE</strong>
+          <input type="radio" name="age" checked /><strong class="b"
+            >FEMALE</strong
+          >
+        </div>
+
+        <div class="form-group">
+          <strong class="m">LOACLITY:</strong
+          ><input type="text" name="" placeholder="Enter your Locality" />
+        </div>
+        <div class="form-group">
+          <strong class="m">AGE:</strong>
+
+          <input type="radio" name="age" /><strong class="b">UNDER 18</strong>
+          <input type="radio" name="age" checked /><strong class="b"
+            >ABOVE 18</strong
+          >
+        </div>
+        <div class="form-group">
+          <strong class="m">EMAIL ID:</strong
+          ><input type="text" name="" placeholder="Enter your Email Id" />
+        </div>
+        <div class="form-group">
+          <strong class="m">PHONE NO.</strong> :<input
+            type="text"
+            name=""
+            placeholder="Enter your Phone Number"
+          />
+        </div>
+        <div class="form-group">
+          <strong class="m">ADDRESS:</strong><br /><textarea
+            name="usermessage"
+            placeholder="Enter your address"
+            rows="5"
+            cols="53"
+          >
+          </textarea>
+        </div>
+        <button class="btn">
+          <a href="1.html">Submit</a>
+        </button>
+      </form>
+    </div>
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+  </body>
+  <footer>
+    <div class="footer">
+      <p align="center" style="color:white">
+        <strong
+          ><marquee
+            >Copyright © All Fitness Adda. All Rights Reserved | Contact Us: +91
+            80000 00000</marquee
+          ></strong
+        >
+      </p>
+    </div>
+  </footer>
 </html>
